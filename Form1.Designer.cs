@@ -40,14 +40,14 @@
             this.lblWins = new System.Windows.Forms.Label();
             this.lblLosses = new System.Windows.Forms.Label();
             this.grpStats = new System.Windows.Forms.GroupBox();
+            this.lblScissors = new System.Windows.Forms.Label();
+            this.lblPapers = new System.Windows.Forms.Label();
+            this.lblRocks = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblStreak = new System.Windows.Forms.Label();
             this.lblDraws = new System.Windows.Forms.Label();
             this.btnAgain = new System.Windows.Forms.Button();
             this.tmrAnimate = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblRocks = new System.Windows.Forms.Label();
-            this.lblPapers = new System.Windows.Forms.Label();
-            this.lblScissors = new System.Windows.Forms.Label();
             this.grpWeapons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCom)).BeginInit();
@@ -135,13 +135,13 @@
             // 
             // lblResult
             // 
-            this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Swis721 Blk BT", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(372, 305);
+            this.lblResult.Location = new System.Drawing.Point(217, 305);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(136, 42);
+            this.lblResult.Size = new System.Drawing.Size(431, 63);
             this.lblResult.TabIndex = 4;
             this.lblResult.Text = "label1";
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblResult.Visible = false;
             // 
             // lblWins
@@ -182,6 +182,46 @@
             this.grpStats.TabStop = false;
             this.grpStats.Text = "Stats";
             // 
+            // lblScissors
+            // 
+            this.lblScissors.AutoSize = true;
+            this.lblScissors.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblScissors.Location = new System.Drawing.Point(150, 81);
+            this.lblScissors.Name = "lblScissors";
+            this.lblScissors.Size = new System.Drawing.Size(69, 17);
+            this.lblScissors.TabIndex = 12;
+            this.lblScissors.Text = "Scissors: 0";
+            // 
+            // lblPapers
+            // 
+            this.lblPapers.AutoSize = true;
+            this.lblPapers.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblPapers.Location = new System.Drawing.Point(150, 58);
+            this.lblPapers.Name = "lblPapers";
+            this.lblPapers.Size = new System.Drawing.Size(56, 17);
+            this.lblPapers.TabIndex = 11;
+            this.lblPapers.Text = "Paper: 0";
+            // 
+            // lblRocks
+            // 
+            this.lblRocks.AutoSize = true;
+            this.lblRocks.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblRocks.Location = new System.Drawing.Point(150, 35);
+            this.lblRocks.Name = "lblRocks";
+            this.lblRocks.Size = new System.Drawing.Size(50, 17);
+            this.lblRocks.TabIndex = 10;
+            this.lblRocks.Text = "Rock: 0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.label1.Location = new System.Drawing.Point(139, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 17);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Times chosen:";
+            // 
             // lblStreak
             // 
             this.lblStreak.AutoSize = true;
@@ -219,46 +259,6 @@
             this.tmrAnimate.Interval = 16;
             this.tmrAnimate.Tick += new System.EventHandler(this.tmrAnimate_Tick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.label1.Location = new System.Drawing.Point(139, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 17);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Times chosen:";
-            // 
-            // lblRocks
-            // 
-            this.lblRocks.AutoSize = true;
-            this.lblRocks.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblRocks.Location = new System.Drawing.Point(150, 35);
-            this.lblRocks.Name = "lblRocks";
-            this.lblRocks.Size = new System.Drawing.Size(50, 17);
-            this.lblRocks.TabIndex = 10;
-            this.lblRocks.Text = "Rock: 0";
-            // 
-            // lblPapers
-            // 
-            this.lblPapers.AutoSize = true;
-            this.lblPapers.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblPapers.Location = new System.Drawing.Point(150, 58);
-            this.lblPapers.Name = "lblPapers";
-            this.lblPapers.Size = new System.Drawing.Size(56, 17);
-            this.lblPapers.TabIndex = 11;
-            this.lblPapers.Text = "Paper: 0";
-            // 
-            // lblScissors
-            // 
-            this.lblScissors.AutoSize = true;
-            this.lblScissors.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.lblScissors.Location = new System.Drawing.Point(150, 81);
-            this.lblScissors.Name = "lblScissors";
-            this.lblScissors.Size = new System.Drawing.Size(69, 17);
-            this.lblScissors.TabIndex = 12;
-            this.lblScissors.Text = "Scissors: 0";
-            // 
             // rps
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,7 +281,6 @@
             this.grpStats.ResumeLayout(false);
             this.grpStats.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

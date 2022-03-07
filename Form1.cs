@@ -52,7 +52,6 @@ namespace rps
             vel = 0;
             imgCom.Top = -239;
             tmrAnimate.Enabled = true;
-            lblResult.Visible = true;
             if (choice == cpuChoice)
             {
                 lblResult.Text = "Draw";
@@ -137,6 +136,7 @@ namespace rps
                 else
                 {
                     vel = vel / 2 * -1;
+                    lblResult.Visible = true;
                 }
             }
         }
